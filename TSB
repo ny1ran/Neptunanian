@@ -1,0 +1,290 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Neptunanian Hub",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Neptunanian Hub",
+   LoadingSubtitle = "by @ny1ran",
+   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "tsb hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Access Point",
+      Subtitle = "Key System",
+      Note = "You thinkk yo ass is slick", -- Use this to tell the user how to get a key
+      FileName = "tsb key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Tsb"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local Saitama = Window:CreateTab("Saitama", 4483362458) -- Title, Image
+
+local Garou = Window:CreateTab("Garou", 4483362458) -- Title, Image
+
+local Reap = Window:CreateTab("OP Scripts", 4483362458) -- Title, Image
+
+local JJK = Saitama:CreateSection("Jujutsu Kaisen")
+
+local Gojo = Saitama:CreateButton({
+   Name = "Gojo",
+   Callback = function()
+   	getgenv().morph = false -- turn false to true if you want custom accessories
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/refs/heads/main/LatestV2.lua"))()
+   end,
+})
+
+local GojoJJS = Saitama:CreateButton({
+   Name = "Gojo JJS",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/damir512/jjsgojov3/main/SaitamaToGojoV3_SOURCE-obfuscated_2.txt",true))()
+   end,
+})
+ 
+ local Hakari = Saitama:CreateButton({
+   Name = "Hakari",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/eEDYWj8p"))()
+   end,
+})
+ local Yuji = Saitama:CreateButton({
+   Name = "Yuji",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Onihub-sigma/Onihub-Itadori/refs/heads/main/Itadori%20Onihub%20Public.txt"))()
+   end,
+})
+ local Sukuna = Saitama:CreateButton({
+   Name = "Sukuna",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/rL3hyRQV'))()
+   end,
+})
+ local Mahito = Saitama:CreateButton({
+   Name = "Mahito",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Mahitotsbupdate'))()
+   end,
+})
+  local MahitoJJS = Saitama:CreateButton({
+   Name = "Mahito JJS",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/2HJnbJPM'))()
+   end,
+})
+
+local CombatGods = Saitama:CreateSection("Combat Gods")
+
+ local Shinji = Saitama:CreateButton({
+   Name = "Shinji",
+   Callback = function()
+   getgenv().speedtools = false --- set true if you want use this tool if you want to run
+    getgenv().speedpunch = true --- tp and normal Punch
+    getgenv().dance = true --- set true if you want to this dance song made by rebzyyx all I want is you 
+    getgenv().night = true -- set true if you want to day to night 
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Shinji%20tp%20exploit'))()
+   end,
+})
+
+local Jun = Saitama:CreateButton({
+   Name = "Jun",
+   Callback = function()
+    getgenv().BetterGraphics = true -- Gives you fog and a custom sky. Set this to true/false to toggle
+	getgenv().sendChat = false -- Sends the subtitles as messages too. Set this to true/false to toggle
+ 
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Mc4121ban/Source/refs/heads/main/omg%20ratter.lua.creck"))()
+   end,
+})
+
+local Other = Saitama:CreateSection("Other")
+
+local Trash = Saitama:CreateButton({
+   Name = "Trash Can Man",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yes1nt/yes/refs/heads/main/Trashcan%20Man", true))()
+   end,
+})
+
+local SaitamaV2 = Saitama:CreateButton({
+   Name = "Saitama Overhaul",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/SaitamaOverhaul/refs/heads/main/Latest.lua"))()
+   end,
+})
+
+local Idk = Garou:CreateSection("Random Stuff")
+
+local Angel = Garou:CreateButton({
+   Name = "Angel",
+   Callback = function()
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/GoldenHeads2/93ddb1b1e2935bc76fbc37aae8985ad2/raw/47dfa45e1e8f1933a1c031b198d40c3cd1499fa2/gistfile1.txt"))() 
+   end,
+})
+
+local Atrain = Garou:CreateButton({
+   Name = "A-Train",
+   Callback = function()
+    loadstring(game:HttpGet("https://paste.ee/r/AnZ5j"))() 
+   end,
+})
+
+local SaitamaReap = Reap:CreateSection("Saitama")
+
+local KJ = Reap:CreateButton({
+   Name = "KJ",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/KJ.lua"))()
+   end,
+})
+
+local KJ2 = Reap:CreateButton({
+   Name = "KadeJ",
+   Callback = function()
+    ----<< BOOTLEG KJ / Baldy To KJ / KaitamJ >>----
+	--[[ Credits: 
+	- i.am.an.agent : Script Developer
+	- _1.8e308 : Revival Of Script, Script Developer
+	]]
+
+	--// BUILD January 11 12:00 PM GMT+8 by i.am.an.agent
+
+	getgenv().Moveset_Settings = {
+    	["ExecuteOnRespawn"] = true, --// If true, the moveset will load everytime you respawn
+
+    	["TSBStyleNotification"] = true, --// If true, uses the TSB notification when you spawn in with KJ
+
+    	["UseOldCollateralRuin"] = true, --// If true, uses the old Collateral Ruin VFX and SFX
+
+    	["NoWarning"] = true, --// If true, removes the warning that appears when you're not on Saitama
+    	["NoDeathCounterImages"] = false, --// If true, will disable the images that appear in death counter slap
+    	["NoBarrageArms"] = false, --// If true, will destroy the barrage arms that appear when you use consecutive punch
+    	["NoPreysPerilAttract"] = true, --// If true, preys peril will not be able to attract you.
+    	["NoWalls"] = false,
+    	["NoTrees"] = false,
+
+    	["RavageTool"] = true,
+    	["AdrenalineBoostTool"] = true,
+    	["Adrenaline_Multiplier"] = 2, --// how much adrenaline multiplies your speed by
+
+    	["CustomUppercutAnimation"] = true,
+    	["CustomDownslamAnimation"] = true,
+    	["CustomIdleAnimation"] = true,
+
+    	["UltNames"] = {
+        "20 SERIES",
+        "COME AT ME",
+        "I'M DONE",
+    	},
+
+    	["MoveNames"] = {
+        	["Normal Punch"] = "Ravaging Kick",
+        	["Consecutive Punches"] = "Fist Fusillade",
+        	["Shove"] = "Swift Sweep",
+        	["Uppercut"] = "Collateral Storm",
+
+        	["Death Counter"] = "Sudden Strike",
+        	["Table Flip"] = "Stoic Bomb",
+        	["Serious Punch"] = "Destructive Power",
+        	["Omni Directional Punch"] = "Omni Directional Fists"
+    	},
+	}
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToKJ/refs/heads/main/Latest.lua"))()
+   end,
+})
+
+local GarouReap = Reap:CreateSection("Garou")
+
+local Arcaura = Reap:CreateButton({
+   Name = "Arcaura",
+   Callback = function()
+    getgenv().OptimizeUltimate = false
+	--self explanatory
+	getgenv().ReduceUltFlash = true
+	--self explanatory
+	getgenv().Move1Insta = false
+	--set it to false if you dont want the first move to instant kill
+	getgenv().LowQualityMode = true
+	--set to true if you have a shit pc (like me)
+	getgenv().BetaConsole = true
+	--its a console menu so you can modify each settings whenever you want
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/ARCAURA.lua"))()
+   end,
+})
+
+local Favilla = Reap:CreateButton({
+   Name = "Favilla",
+   Callback = function()
+    getgenv().domorph = true
+	--morphs
+
+	getgenv().Rate = .03
+	--idle aura rate
+
+	getgenv().nocam = false
+	--changes if 1 is a cutscene or not
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/FAVILLA.lua"))()
+   end,
+})
+
+local AtomicReap = Reap:CreateSection("Atomic")
+
+local Floating = Reap:CreateButton({
+   Name = "Floating Girl",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/FLOATING_GIRL.lua"))()
+   end,
+})
+
+local MetalReap = Reap:CreateSection("Metal Bat")
+
+local Reaper = Reap:CreateButton({
+   Name = "Reaper",
+   Callback = function()
+    getgenv().Music = false
+	--Setting this to false usually fixes most executors
+	--also it helps load time a little bit
+	getgenv().AttackQuality = 'High'
+	--Set to Low,High
+
+ 	getgenv().ConstantSpeed = false
+	--if you want your speed to be constant
+	--Set to Low,High
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/main/APOPHENIA.lua"))()
+   end,
+})
+
+local SonicReap = Reap:CreateSection("Sonic")
+
+local Volta = Reap:CreateButton({
+   Name = "Volta",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/VOLTA.lua"))()
+   end,
+})
+
+local StarReap = Reap:CreateSection("Early Access")
+
+local Star = Reap:CreateButton({
+   Name = "Star Glitcher",
+   Callback = function()
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/Reapvitalized/d2aaa1e3c204ba9491a44924db876d2b/raw/e5e40b46cbeb93159e134f85ca904a2534637539/dreamgroomer.lua"))()
+   end,
+})
